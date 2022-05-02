@@ -4,3 +4,6 @@ Se implementará una plataforma de e-commerce, para la PyME PROMEMEX; misma que 
 El proyecto se llevará a cabo con el uso de distintas herramientas, tanto para el diseño, maquetación y la puesta en marcha. Entre las más destacables se encuentran: 
 
 GitHub, sistema en línea para el versionado de código.
+
+
+Figma, es una aplicación de escritorio y web, nos permite crear diseños de componentes, hacer uso de distintas tipografías, que serán usados para la maquetación de una página web o de otro tipo de aplicaciones. MIJHAIL
