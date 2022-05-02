@@ -7,3 +7,5 @@ GitHub, sistema en línea para el versionado de código.
 
 
 Figma, es una aplicación de escritorio y web, nos permite crear diseños de componentes, hacer uso de distintas tipografías, que serán usados para la maquetación de una página web o de otro tipo de aplicaciones. MIJHAIL
+
+Zoom, es una aplicación web y de escritorio, usada para reuniones virtuales, nos permite mantenernos en contacto y organizarnos en equipo. MANU
