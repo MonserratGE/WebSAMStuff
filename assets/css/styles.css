@@ -209,24 +209,7 @@ footer__left {
   }
 }
 
-.bene{
-  font-size: 30px;
-  font-family: 'Courier New', Courier, monospace;
-  text-align: center;
-}
-
-td{
-  text-align: justify;
-  width: 600px;
-  height: 60px;
-  
-}
-
 .ic{
+  margin: 0 auto;
   width: 130px;
-}
-
-table{
-  align-items: center;
-  
 }
