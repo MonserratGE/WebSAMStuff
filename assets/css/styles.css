@@ -123,15 +123,34 @@ html {
   margin: 2rem 0;
 }
 
+.card {
+  border: 0;
+  border-bottom: 4px solid #343a4030;
+  border-right: 1.5px solid #343a4030;
+  border-radius: 3px;
+  transition: 300ms;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
 .bb-2 {
-  padding-bottom: 1rem;
+  padding-bottom: 0.25rem;
   border-bottom: 3px solid #343a4030;
   align-items: center;
 }
 
-.fab {
-  margin-bottom: 0.75rem;
+.fas {
   color: #343a4095;
+}
+
+.go-shopping{
+  transition: ease-in-out 300ms ;
+}
+
+.go-shopping:hover {
+  color: #343a40;
 }
 /* Mapa */
 .maps {
