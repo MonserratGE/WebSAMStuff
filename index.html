@@ -8,11 +8,8 @@
   content="width=device-width, initial-scale=1, shrink-to-fit=no"
   />
   
-  <title>GEMA</title>
-  <link
-  rel="icon"
-  href="https://logopond.com/logos/386732f01cb49802d45479699a17fe12.png"
-  />
+  <title>WebSAMStuff | Furnitura</title>
+  <link  rel="icon" href="https://logopond.com/logos/386732f01cb49802d45479699a17fe12.png"/>
   
   <!-- Bootstrap CSS -->
   <link
@@ -24,6 +21,8 @@
   
   <!-- CSS Propio -->
   <link rel="stylesheet" href="./assets/css/styles.css" />
+  <!--Fontawesome Icons-->
+  <script src="https://kit.fontawesome.com/37b95c2af1.js" crossorigin="anonymous"></script>
 </head>
 <!-- Iconos -->
 <link
@@ -35,7 +34,7 @@ crossorigin="anonymous"
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark navbar-ground sticky-top">
-    <div class="container">
+    <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img class="img-logo" src="./assets/img/logo.png" alt="" />
       </a>
@@ -51,7 +50,11 @@ crossorigin="anonymous"
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
+      <form class="form-inline my-2 my-lg-0 ml-auto">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <ul class="navbar-nav">
         <li class="nav-item active">
           <a class="nav-link" href="#carouselExampleControls"
           >Inicio <span class="sr-only">(current)</span></a
@@ -80,7 +83,7 @@ crossorigin="anonymous"
   </div>
 </nav>
 
-<div
+<div 
 id="carouselExampleControls"
 class="carousel slide"
 data-ride="carousel"
@@ -193,9 +196,15 @@ data-slide="next"
     </div>
   </div>
 </div>
+<!--Cards-->
+<div class="container mt-5 mb-5">
+  <div id="imageContainer" class="row row-cols-1 row-cols-md-3">
+    
+  </div>
+</div>
 
-<div id="imagenes" class="mt-5 text-center">
-  <div class="container">
+<div id="imagenes">
+  <div class="container mt-5">
     <h2 class="mb-5">Imágenes</h2>
     <div class="row row-cols-1 row-cols-md-3">
       <div class="col mb-4">
@@ -206,12 +215,16 @@ data-slide="next"
           alt="..."
           />
           <div class="card-body">
-            <h5 class="card-title">Modelo #</h5>
+            <div class="d-flex flex-row bb-2">
+              <h5 class="card-title ">Salas</h5>
+              <a class="ml-auto card-title " href="#"> <i class="fas fa-shopping-cart fa-2x go-shopping go-shopping"></i> </a>            
+            </div>
             <p class="card-text">
               This is a longer card with supporting text below as a natural
               lead-in to additional content. This content is a little bit
               longer.
             </p>
+            <input class="btn btn-dark btn-block" type="button" value="Saber más">
           </div>
         </div>
       </div>
@@ -223,12 +236,16 @@ data-slide="next"
           alt="..."
           />
           <div class="card-body">
-            <h5 class="card-title">Modelo #</h5>
+            <div class="d-flex flex-row bb-2">
+              <h5 class="card-title">Comedores</h5>
+              <a class="ml-auto card-title" href="#"> <i class="fas fa-shopping-cart fa-2x go-shopping"></i> </a>            
+            </div>
             <p class="card-text">
               This is a longer card with supporting text below as a natural
               lead-in to additional content. This content is a little bit
               longer.
             </p>
+            <input class="btn btn-dark btn-block" type="button" value="Saber más">
           </div>
         </div>
       </div>
@@ -240,11 +257,16 @@ data-slide="next"
           alt="..."
           />
           <div class="card-body">
-            <h5 class="card-title">Modelo #</h5>
+            <div class="d-flex flex-row bb-2">
+              <h5 class="card-title">Percheros</h5>
+              <a class="ml-auto card-title" href="#"> <i class="fas fa-shopping-cart fa-2x go-shopping"></i> </a>            
+            </div>
             <p class="card-text">
               This is a longer card with supporting text below as a natural
-              lead-in to additional content.
+              lead-in to additional content. This content is a little bit
+              longer.
             </p>
+            <input class="btn btn-dark btn-block" type="button" value="Saber más">
           </div>
         </div>
       </div>
@@ -256,12 +278,16 @@ data-slide="next"
           alt="..."
           />
           <div class="card-body">
-            <h5 class="card-title">Modelo #</h5>
+            <div class="d-flex flex-row bb-2">
+              <h5 class="card-title">Barras</h5>
+              <a class="ml-auto card-title" href="#"> <i class="fas fa-shopping-cart fa-2x go-shopping"></i> </a>
+            </div>
             <p class="card-text">
               This is a longer card with supporting text below as a natural
               lead-in to additional content. This content is a little bit
               longer.
             </p>
+            <input class="btn btn-dark btn-block" type="button" value="Saber más">
           </div>
         </div>
       </div>
@@ -273,12 +299,16 @@ data-slide="next"
           alt="..."
           />
           <div class="card-body">
-            <h5 class="card-title">Modelo #</h5>
+            <div class="d-flex flex-row bb-2">
+              <h5 class="card-title ">Mesas</h5>
+              <a class="ml-auto card-title" href="#"> <i class="fas fa-shopping-cart fa-2x go-shopping"></i> </a>
+            </div>
             <p class="card-text">
               This is a longer card with supporting text below as a natural
               lead-in to additional content. This content is a little bit
               longer.
             </p>
+            <input class="btn btn-dark btn-block" type="button" value="Saber más">
           </div>
         </div>
       </div>
@@ -290,18 +320,86 @@ data-slide="next"
           alt="..."
           />
           <div class="card-body">
-            <h5 class="card-title">Modelo #</h5>
+            <div class="d-flex flex-row bb-2">
+              <h5 class="card-title">Sillas</h5>
+              <a class="ml-auto card-title" href="#"> <i class="fas fa-shopping-cart fa-2x go-shopping"></i> </a>
+            </div>
             <p class="card-text">
               This is a longer card with supporting text below as a natural
               lead-in to additional content. This content is a little bit
               longer.
             </p>
+            <input class="btn btn-dark btn-block" type="button" value="Saber más">
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img
+          src="https://cdn1.coppel.com/images/catalog/pm/3284483-1.jpg"
+          class="card-img-top img-card"
+          alt="..."
+          />
+          <div class="card-body">
+            <div class="d-flex flex-row bb-2">
+              <h5 class="card-title">Escritorios</h5>
+              <a class="ml-auto card-title" href="#"> <i class="fas fa-shopping-cart fa-2x go-shopping"></i> </a>
+            </div>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <input class="btn btn-dark btn-block" type="button" value="Saber más">
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img
+          src="https://cdn1.coppel.com/images/catalog/pm/3734513-1.jpg"
+          class="card-img-top img-card"
+          alt="..."
+          />
+          <div class="card-body">
+            <div class="d-flex flex-row bb-2">
+              <h5 class="card-title">Oficina</h5>
+              <a class="ml-auto card-title" href="#"> <i class="fas fa-shopping-cart fa-2x go-shopping"></i> </a>
+            </div>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <input class="btn btn-dark btn-block" type="button" value="Saber más">
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img
+          src="https://cdn1.coppel.com/images/catalog/pm/3095753-1.jpg"
+          class="card-img-top img-card"
+          alt="..."
+          />
+          <div class="card-body">
+            <div class="d-flex flex-row bb-2">
+              <h5 class="card-title">Exteriores</h5>
+              <a class="ml-auto card-title" href="#"> <i class="fas fa-shopping-cart fa-2x go-shopping"></i> </a>
+            </div>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <input class="btn btn-dark btn-block" type="button" value="Saber más">
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+<!--End Cards-->
 
 <div id="video" class="video-bg p-5">
   <div class="container">
@@ -523,17 +621,10 @@ data-slide="next"
 </footer>
 
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-<script
-src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-crossorigin="anonymous"
-></script>
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-crossorigin="anonymous"
-></script>
-
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<!--Pruebas con API para imágenes-->
+<script src="/assets/js/main.js"></script>
 <!-- ScrollReveal -->
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="./assets/js/scrollReveal.js"></script>

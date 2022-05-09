@@ -1,3 +1,6 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Montserrat:wght@400;500&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,400&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
@@ -106,8 +109,49 @@ html {
   height: 200px;
   object-fit: cover;
   object-position: center;
+  border-bottom: 3px solid #343a4030;
 }
 
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.card-text {
+  font-family: 'Roboto Flex', sans-serif;
+  letter-spacing: .7px;
+  margin: 2rem 0;
+}
+
+.card {
+  border: 0;
+  border-bottom: 4px solid #343a4030;
+  border-right: 1.5px solid #343a4030;
+  border-radius: 3px;
+  transition: 300ms;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.bb-2 {
+  padding-bottom: 0.25rem;
+  border-bottom: 3px solid #343a4030;
+  align-items: center;
+}
+
+.fas {
+  color: #343a4095;
+}
+
+.go-shopping{
+  transition: ease-in-out 300ms ;
+}
+
+.go-shopping:hover {
+  color: #343a40;
+}
 /* Mapa */
 .maps {
   display: flex;
@@ -213,3 +257,4 @@ footer__left {
   margin: 0 auto;
   width: 130px;
 }
+
