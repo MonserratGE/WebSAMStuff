@@ -25,6 +25,12 @@ html {
   object-position: center;
 }
 
+.nosotros{
+  font-size: 20px ;
+}
+
+
+
 /* Cajita */
 .pantalla {
   position: absolute;
