@@ -12,33 +12,35 @@ fetch(url, {
         ).
         then(
             (data) => {
-                const arrayImages = data.photos.slice(0, 9);
+            const arrayImages = data.photos.slice(0, 9);
 
-                arrayImages.forEach(image => {
-                    const datosNecesarios = {
-                        image: image.src.tiny,
-                        title: image.photographer,
-                    }
+            arrayImages.forEach(image => {
+                const datosNecesarios = {
+                    id: image.id,
+                    image: image.src.tiny,
+                    title: image.photographer,
+                    alt: image.alt
+                }
 
-                    const template = `
-                    <div  class="col-12">      
-                        <div class="card mt-3 mb-3" role="button">
-                            <img src="${datosNecesarios.image}" class="card-img-top img-card" alt="..."/>
-                            <div class="card-body">
-                                <div class="d-flex flex-row bb-2">
-                                    <h5 class="card-title ">${datosNecesarios.title}</h5>
-                                    <a class="ml-auto card-title " href="#"> <i class="fas fa-shopping-cart fa-2x go-shopping go-shopping"></i> </a>            
-                                </div>
-                                    <p class="card-text mb-3">
-                                        This is a longer card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit
-                                        longer.
-                                    </p>
-                                </div>
+                const template = `
+                <div  class="col-12">      
+                    <div class="card mt-3 mb-3" role="button">
+                        <img src="${datosNecesarios.image}" class="card-img-top img-card" alt="${datosNecesarios.alt}"/>
+                        <div class="card-body">
+                            <div class="d-flex flex-row bb-2">
+                                <h5 class="card-title ">${datosNecesarios.title}</h5>
+                                <a class="ml-auto card-title " href="carrito.html"> <i class="fas fa-shopping-cart fa-2x go-shopping go-shopping"></i> </a>            
+                            </div>
+                                <p class="card-text mb-3">
+                                    This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit
+                                    longer.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    `;
-                    imageContainer.innerHTML += template;
-                });
-            });
+                </div>
+                `;
+                imageContainer.innerHTML += template;
+    });
+});
