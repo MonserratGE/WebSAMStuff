@@ -15,6 +15,7 @@ fetch(url, {
         then(
             (data) => {
             const arrayImages = data.photos.slice(0, 57);
+            console.log(arrayImages);
             arrayImages.forEach(image => {
 
             const datosNecesarios = {
