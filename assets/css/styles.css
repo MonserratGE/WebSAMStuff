@@ -41,7 +41,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-
   text-align: center;
 }
 
@@ -96,6 +95,11 @@ html {
   height: 50px;
   animation: bgcolor ease-in-out 2s infinite;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
 }
 
 @keyframes bgcolor {
