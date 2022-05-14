@@ -10,6 +10,11 @@ html {
   background-color: rgba(152, 150, 151, 255);
 }
 
+.navbar-brand > img {
+  width: 50px;
+  height: auto;
+}
+
 .img-logo {
   width: 315px;
   height: 50px;
@@ -37,7 +42,6 @@ html {
   z-index: 1;
   width: 100%;
   height: calc(100vh - 76px);
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,7 +181,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-
   text-align: center;
 }
 
@@ -218,10 +221,14 @@ html {
 .footer span {
   font-weight: bold;
 }
-.footer p {
-  text-align: left;
+
+@media (max-width: 1000px) {
+  .pantalla {
+    display: none;
+  }
 }
 
+/*
 .footer__right {
   width: 400px;
 }
@@ -236,13 +243,13 @@ html {
   display: inline-block;
   border: 2px solid white;
   padding: 5px 15px;
-  /*border-radius: 7px;*/
+  border-radius: 7px;
   transition: all;
   transition: .3s;
 }
 
 
-footer__left {
+.footer__left {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -252,8 +259,9 @@ footer__left {
   display: flex;
   align-items: center;
 }
-
+*/
 /*FOOTER END*/
+/*
 @media only screen and (max-width: 879px) {
   .contenido-uno {
     margin-bottom: 24px;
@@ -278,3 +286,4 @@ footer__left {
   width: 130px;
 }
 
+*/
