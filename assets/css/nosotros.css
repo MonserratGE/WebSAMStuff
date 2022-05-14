@@ -52,29 +52,4 @@ height: 400px;
 max-width: 100%;
 }
 
-.sam{
-  width:250px;
- display: flex;
- padding: 20px;
-}
-
-
-.footer__left-social-icons {
-  font-size: 25px;
-}
-.footer__left-social-icons div {
-  display: inline-block;
-  margin: 0 5px;
-}
-.footer__left-social-icons div a {
-  display: inline-block;
-  border: 2px solid white;
-  padding: 5px 15px;
-  /*border-radius: 7px;*/
-  transition: all;
-  transition: .3s;
-}
-
-
-
-
+    
