@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   
   <title>WebSAMStuff | Furnitura</title>
-  <link  rel="icon" href="https://logopond.com/logos/386732f01cb49802d45479699a17fe12.png"/>
+  <link  rel="icon" href="assets/img/icono_websamstuff_256.png"/>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
   <!-- CSS Propio -->
@@ -27,30 +27,31 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <form class="form-inline my-2 my-lg-0 ml-auto" id="searchForm">
-          <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        <form class="ml-auto" id="searchForm">
+          <div class="input-group search">
+            <input id="searchInput" type="text" class="form-control" placeholder="Buscar" aria-label="busqueda" aria-describedby="basic-addon">
+            <div class="input-group-append">
+              <button class="btn btn-dark my-2 my-sm-0" id="basic-addon2" type="submit">Buscar</button>
+            </div>
+          </div>
         </form>
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#carouselExampleControls">
+            <a class="nav-link" href="#">
               Inicio <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#info">Catálogo</a>
+            <a class="nav-link" href="catalog.html">Catálogo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#imagenes">Imágenes</a>
+            <a class="nav-link" href="#imagenes">Categorías</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#video">Vídeo</a>
+            <a class="nav-link" href="carrito.html">Pedidos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#comprar">Pedidos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#maps">Mapa</a>
+            <a class="nav-link" href="#maps">Ubicación</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#beneficios">Beneficios</a>
@@ -165,7 +166,7 @@
             <div class="card-body">
               <div class="d-flex flex-row bb-2">
                 <h5 class="card-title ">Salas</h5>
-                <a class="ml-auto card-title " href="#"></a>            
+                <a id="salas" class="ml-auto card-title " href="#"></a>            
               </div>
               <p class="card-text">
                 This is a longer card with supporting text below as a natural
