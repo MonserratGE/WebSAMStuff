@@ -1,7 +1,6 @@
 const myAccess = '563492ad6f91700001000001189ff3f514204c2e8051b9e549c2158b';
 const url = 'https://api.pexels.com/v1/search?query=furniture&per_page=80';
 const catalogContainer = document.getElementById('catalogContainer');
-const imageContainer = document.getElementById('imageContainer');
 
 fetch(url, {
     headers: {
@@ -13,7 +12,7 @@ fetch(url, {
         ).
         then(
             (data) => {
-            const arrayImages = data.photos.slice(0, 12);
+            const arrayImages = data.photos.slice(0, 80);
 
             arrayImages.forEach(image => {
                 const datosNecesarios = {
@@ -26,7 +25,7 @@ fetch(url, {
                 const template = `
                 <div  class="col-12">      
                     <div class="card mt-3 mb-3" role="button">
-                        <a href="catalog.html">
+                        <a href=#">
                             <img src="${datosNecesarios.image}" class="card-img-top img-card" alt="${datosNecesarios.alt}"/>
                         </a>
                         <div class="card-body">
@@ -44,6 +43,6 @@ fetch(url, {
                     </div>
                 </div>
                 `;
-                imageContainer.innerHTML += template;
+                catalogContainer.innerHTML += template;
     });
 });
