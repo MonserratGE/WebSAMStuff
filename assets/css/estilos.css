@@ -1,52 +1,45 @@
-input[type=text] {
+a > img {
+    width: 220px;
+    height: auto;
+    transition: 333ms;
+}
+
+a > img:hover {
+    width: 300px;
+    height: auto;
+    transition-timing-function: ease-in-out;
+}
+
+input[type="text"] {
     border: none; 
     transition: 300ms;
 }
-input[type=text]:focus{
+input[type="text"]:focus{
     border-bottom: 3px solid #47526C;
     transition-timing-function: ease-in-out; 
-
 }
-input[type=password] {
+
+input[type="password"] {
     border: none; 
     transition: 300ms;
 }
-input[type=password]:focus{
+
+input[type="password"]:focus{
     border-bottom: 3px solid #47526C;
     transition-timing-function: ease-in-out; 
-
 }
 
 .logo{
     height: auto;
-    width: 20rem;
-    margin-bottom: 3rem;
-    padding-right: 80;
-   
-    
+    width: 150px;
 }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-}
-
-body{
-    background-image: url(../images/bg4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-main{
-    width: 100%;
-    padding: 20px;
-    margin: auto;
-    margin-top: 100px;
-    justify-content: center;
 }
 
 .contenedor__todo{
@@ -126,7 +119,6 @@ main{
     padding: 80px 20px;
     background: white;
     position: absolute;
-    border-radius: 20px;
 }
 
 .contenedor__login-register form h2{
