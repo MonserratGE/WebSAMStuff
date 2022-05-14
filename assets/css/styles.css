@@ -51,10 +51,11 @@ html {
 .cuadro {
   background-color: rgba(0, 0, 0, 0.712);
   border-radius: 15px;
-  padding: 20px;
+  padding: 10px;
   color: white;
   width: 70vw;
   height: auto;
+  
 }
 
 .fuente-nosotros{
