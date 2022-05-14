@@ -42,7 +42,6 @@ html {
   z-index: 1;
   width: 100%;
   height: calc(100vh - 76px);
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,6 +219,12 @@ html {
 }
 .footer span {
   font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+  .pantalla {
+    display: none;
+  }
 }
 
 /*
