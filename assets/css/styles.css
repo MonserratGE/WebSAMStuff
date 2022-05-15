@@ -205,6 +205,11 @@ height: 100%;
   background-color: #47817e;
 }
 
+.carro{
+  width: 100%;
+  height: 100%;
+}
+
 /* Formulario */
 .form-bg {
   background-color: rgb(98, 68, 96);
