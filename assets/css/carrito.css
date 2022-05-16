@@ -5,7 +5,7 @@
 .item {
     border: 2px solid rgba(201, 189, 177, 0.85);
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 5px;
   }
   
   .item-title {
