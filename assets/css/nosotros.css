@@ -118,3 +118,15 @@ h2{
   display: flex;
   align-items: center;
 }
+
+hr {
+  border: #47817E solid 1px;
+  border-radius: 2px;
+  height: 0px;
+}
+
+.img-card-team {
+  width: 100%;
+  height: auto;
+  border-radius: 1px;
+}
