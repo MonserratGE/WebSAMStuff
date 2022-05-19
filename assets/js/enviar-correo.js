@@ -1,10 +1,12 @@
-const btn = document.getElementById('enviarCorreo');
+//const btn = document.getElementById('enviarCorreo');
 
-btn.addEventListener('click', function(e) {
+const form = document.getElementById("formulario")
+form.addEventListener('submit', function(e) {
     e.preventDefault();
-    const email = document.getElementById('email');
-    const nombre = document.getElementById('nombre');
-    const direccion = document.getElementById('direccion');
-    const mensaje = document.getElementById('mensaje');
-    window.location.href=`mailto:samwebstuff.06@gmail.com?subject=envioFormulario&body=Correo%3A${email[1]}%0ANombre%3A${nombre}%0ADirecci%C3%B3n%3A${direccion}%0AMensaje%3A${mensaje}`
+    let datos = new FormData(form);
+    const email = form.querySelector('#email').value;
+    const nombre = form.querySelector('#nombre').value;
+    const direccion = form.querySelector('#direccion').value;
+    const mensaje = form.querySelector('#mensaje').value;
+    window.location.href=`mailto:samwebstuff.06@gmail.com?subject=Formulario&body=Correo%3A${email}%0ANombre%3A${nombre}%0ADirecci%C3%B3n%3A${direccion}%0AMensaje%3A${mensaje}`
 })
