@@ -27,7 +27,7 @@ fetch(url).then(response => response.json()).then(data => {
             <img class="img-logo w-100 h-auto p-3" src="${datosNecesarios.imagen_general}" alt="">
         </div>
         <div class="col">
-        <h2>Titulo de la consulta</h2>
+        <h2>${datosNecesarios.nombre}</h2>
         <hr>
         <h4>Descripción:</h4>
         <p>

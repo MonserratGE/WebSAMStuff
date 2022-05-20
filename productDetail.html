@@ -1,182 +1,164 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
-    <!-- CSS Propio -->
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <!--Fontawesome Icons-->
-    <script src="https://kit.fontawesome.com/37b95c2af1.js" crossorigin="anonymous"></script>
-    <!-- Iconos -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+  <!-- CSS Propio -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <!--Fontawesome Icons-->
+  <script src="https://kit.fontawesome.com/37b95c2af1.js" crossorigin="anonymous"></script>
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-ground sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img class="img-logo" src="./assets/img/logo.png" alt="" />
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-ground sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img class="img-logo" src="./assets/img/logo.png" alt="" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <form class="ml-auto" id="searchForm">
+          <div class="input-group search">
+            <input id="searchInput" type="text" class="form-control" placeholder="Buscar" aria-label="busqueda" aria-describedby="basic-addon">
+            <div class="input-group-append">
+              <button class="btn btn-dark my-2 my-sm-0" id="basic-addon2" type="submit">Buscar</button>
+            </div>
+          </div>
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              Producto <span class="sr-only">(current)</span>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <form class="ml-auto" id="searchForm">
-                    <div class="input-group search">
-                        <input id="searchInput" type="text" class="form-control" placeholder="Buscar" aria-label="busqueda" aria-describedby="basic-addon">
-                        <div class="input-group-append">
-                            <button class="btn btn-dark my-2 my-sm-0" id="basic-addon2" type="submit">Buscar</button>
-                        </div>
-                    </div>
-                </form>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                      </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
-                            Detalle<span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="carrito.html">Pedidos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#maps">Ubicación</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Contactanos</a>
-                    </li>
-                </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catalog.html">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#imagenes">Categorías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="carrito.html">Carrito</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <main class="container-fluid mt-5 mb-5" id="productContainer">
+    
+  </main>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <h2>También te puede interesar</h2>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <img src="https://cdn1.coppel.com/images/catalog/pm/3095753-1.jpg" class="card-img-top img-card" alt="..."/>
+          <div class="card-body">
+            <div class="d-flex flex-row bb-2">
+              <h5 class="card-title">Percheros</h5>
+              <a class="ml-auto card-title" href="#"> </a>
             </div>
-        </div>
-    </nav>
-
-    <main class="container-fluid mt-5 mb-5" id="productContainer">
-      
-    </main>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <h2>También te puede interesar</h2>
-        </div>
-        <div class="col-4">
-          <div class="card">
-            <img
-              src="https://cdn1.coppel.com/images/catalog/pm/3095753-1.jpg"
-              class="card-img-top img-card"
-              alt="..."
-            />
-            <div class="card-body">
-              <div class="d-flex flex-row bb-2">
-                <h5 class="card-title">Percheros</h5>
-                <a class="ml-auto card-title" href="#"> </a>
-              </div>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-              <input
-                class="btn btn-dark btn-block"
-                type="button"
-                value="Saber más"
-              />
-            </div>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <input class="btn btn-dark btn-block" type="button" value="Saber más"/>
           </div>
         </div>
-        <div class="col-4">
-          <div class="card">
-            <img
-              src="https://cdn1.coppel.com/images/catalog/pm/3095753-1.jpg"
-              class="card-img-top img-card"
-              alt="..."
-            />
-            <div class="card-body">
-              <div class="d-flex flex-row bb-2">
-                <h5 class="card-title">Percheros</h5>
-                <a class="ml-auto card-title" href="#"> </a>
-              </div>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-              <input
-                class="btn btn-dark btn-block"
-                type="button"
-                value="Saber más"
-              />
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <img src="https://cdn1.coppel.com/images/catalog/pm/3095753-1.jpg" class="card-img-top img-card" alt="..." />
+          <div class="card-body">
+            <div class="d-flex flex-row bb-2">
+              <h5 class="card-title">Percheros</h5>
+              <a class="ml-auto card-title" href="#"> </a>
             </div>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <input class="btn btn-dark btn-block" type="button"
+            value="Saber más"
+            />
           </div>
         </div>
-        <div class="col-4">
-          <div class="card">
-            <img
-              src="https://cdn1.coppel.com/images/catalog/pm/3095753-1.jpg"
-              class="card-img-top img-card"
-              alt="..."
-            />
-            <div class="card-body">
-              <div class="d-flex flex-row bb-2">
-                <h5 class="card-title">Percheros</h5>
-                <a class="ml-auto card-title" href="#"> </a>
-              </div>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-              <input
-                class="btn btn-dark btn-block"
-                type="button"
-                value="Saber más"
-              />
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <img
+          src="https://cdn1.coppel.com/images/catalog/pm/3095753-1.jpg"
+          class="card-img-top img-card"
+          alt="..."
+          />
+          <div class="card-body">
+            <div class="d-flex flex-row bb-2">
+              <h5 class="card-title">Percheros</h5>
+              <a class="ml-auto card-title" href="#"> </a>
             </div>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <input class="btn btn-dark btn-block" type="button" value="Saber más"/>
           </div>
         </div>
       </div>
     </div>
-
-    <footer class="footer-bg text-white container-fluid mt-5 footer d-none d-md-block">
-        <div class="row">
-          <div class="col-12 col-md-7 col-lg-6 ml-auto">
-            <p><span>Descubrir</span></p>
-            <p>Programas de recompensas por</p>
-            <p>Reservación</p>
-            <p>Privados</p>
-            <p>Reserva para terceros</p>
-            <p>Distribuidora cerca de mi</p>
-            <p>Entrega a domicilio cerca de mi</p>      
-          </div>
-          <div class="col-12 col-md-5 col-lg-6 text-center">
-            <div class="btn-group" role="group" aria-label="Basic example">
-              <button type="button" class="btn btn-outline-secondary">
-                <i class="fab fa-facebook-f fa-2x text-light p-2"></i>
-              </button>
-              <button type="button" class="btn btn-outline-secondary">
-                <i class="fab fa-twitter fa-2x text-light p-2"></i>
-              </button>
-              <button type="button" class="btn btn-outline-secondary">
-                <i class="fab fa-linkedin-in fa-2x text-light p-2"></i>
-              </button>
-              <button type="button" class="btn btn-outline-secondary">
-                <i class="fab fa-github fa-2x text-light p-2"></i>
-              </button>
-            </div>
-          </div>
-          <p>©️ Todos los derechos reservados.</p>
+  </div>
+  
+  <footer class="footer-bg text-white container-fluid mt-5 footer d-none d-md-block">
+    <div class="row">
+      <div class="col-12 col-md-7 col-lg-6 ml-auto">
+        <p><span>Descubrir</span></p>
+        <p>Programas de recompensas por</p>
+        <p>Reservación</p>
+        <p>Privados</p>
+        <p>Reserva para terceros</p>
+        <p>Distribuidora cerca de mi</p>
+        <p>Entrega a domicilio cerca de mi</p>      
+      </div>
+      <div class="col-12 col-md-5 col-lg-6 text-center">
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-outline-secondary">
+            <i class="fab fa-facebook-f fa-2x text-light p-2"></i>
+          </button>
+          <button type="button" class="btn btn-outline-secondary">
+            <i class="fab fa-twitter fa-2x text-light p-2"></i>
+          </button>
+          <button type="button" class="btn btn-outline-secondary">
+            <i class="fab fa-linkedin-in fa-2x text-light p-2"></i>
+          </button>
+          <button type="button" class="btn btn-outline-secondary">
+            <i class="fab fa-github fa-2x text-light p-2"></i>
+          </button>
         </div>
-    </footer>
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-    <script src="assets/js/buscador.js"></script>
-    <script src="assets/js/productResult.js"></script>
+      </div>
+      <p>©️ Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  <script src="assets/js/buscador.js"></script>
+  <script src="assets/js/productResult.js"></script>
 </body>
 </html>
