@@ -1,4 +1,5 @@
-const product = document.querySelectorAll('a');
+const container = document.querySelector('.card');
+const product = container.querySelectorAll('a');
 const links = [...product].filter(producto => producto.id != '');
 console.log(links);
 
