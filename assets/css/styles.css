@@ -256,8 +256,3 @@ hr {
   grid-template-columns: auto auto auto;
   grid-template-rows: 10rem;
 }
-
-.tam{
-  height: 256px;
-  width: 256px;
-}
