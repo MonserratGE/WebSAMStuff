@@ -224,7 +224,7 @@ height: 100%;
   /*margin-top: 400px;*/
   display: flex;
   justify-content: space-around;
-  padding: 40px;
+  
   font-size: 15px;
   color: white;
   line-height: 1;
@@ -256,3 +256,4 @@ hr {
   grid-template-columns: auto auto auto;
   grid-template-rows: 10rem;
 }
+
