@@ -1,11 +1,11 @@
-a > img {
-    width: 220px;
+.img-log > img {
+    width: 100px;
     height: auto;
     transition: 333ms;
 }
 
-a > img:hover {
-    width: 300px;
+.img-log > img:hover {
+    width: 150px;
     height: auto;
     transition-timing-function: ease-in-out;
 }
