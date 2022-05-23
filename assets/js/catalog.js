@@ -18,7 +18,7 @@ fetch(url).then((response) => response.json()).
                 const template = `
                 <div  class="col-12 my-4">      
                     <div class="card mt-3 mb-3 h-100" role="button">
-                        <a id="${datosNecesarios.id}" href="productDetail.html">
+                        <a id="${datosNecesarios.id}" class="productClass" href="productDetail.html">
                             <img src="${datosNecesarios.front_image}" class="card-img-top img-card" alt="${datosNecesarios.nombre}"/>
                         </a>
                         <div class="card-body">
