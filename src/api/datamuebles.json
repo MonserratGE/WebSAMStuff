@@ -52,9 +52,9 @@
 			"cuidados": "Se recomienda utilizar un paño limpio húmedo sólo con agua. Cualquier otro producto puede ir eliminando el brillo de la cubierta hasta dejarla opaca.",
 			"medidas": "100X40X43",
 			"precio": 4250,
-			"imagen_general": "https://www.mueblesamerica.mx/img/1024/1024/resize/1/9/194a00212_a.jpg",
-			"imagen_frontal": "https://www.mueblesamerica.mx/img/1024/1024/resize/1/9/194a00212_a.jpg",
-			"imagen_lateral": null
+			"imagen_general": "https://www.gaiadesign.com.mx/media/catalog/product/cache/28cb47c806b746a91bc25b380c9673fa/m/e/mesa_de_comedor_mazunte_miniambiente1_v1_ho.jpg",
+			"imagen_frontal": "https://www.gaiadesign.com.mx/media/catalog/product/cache/28cb47c806b746a91bc25b380c9673fa/m/e/mesa_de_comedor_mazunte_natural_still2_v2.jpg",
+			"imagen_lateral": "https://www.gaiadesign.com.mx/media/catalog/product/cache/28cb47c806b746a91bc25b380c9673fa/m/e/mesa_de_comedor_mazunte_natural_still1_v2.jpg"
 		},
 		{
 			"id": 130,
@@ -366,7 +366,7 @@
 		},
 		{
 			"id": 152,
-			"categoria": "Comedor",
+			"categoria": "Comedor",   
 			"nombre": "Silla de comedor Gordon",
 			"descripcion": "Complementa la decoración de tu comedor o estudio con Gordon, nuestra silla de diseño contemporáneo. Fabricada con patas de acero inoxidable color negro y estructura de piel PU en color camel. ¿Lo mejor? La suavidad al tacto de su asiento y respaldo.",
 			"materiales": "Base / patas de metal color negro. Tapiz de piel PU.",
@@ -1452,9 +1452,9 @@
 			"cuidados": "Aspira el polvo por lo menos una vez al mes. No expongas el mueble directamente a la luz del sol. En caso de algún derrame de líquidos, limpia con un paño o toalla seca al momento del derrame.",
 			"medidas": "85X118X83",
 			"precio": 899,
-			"imagen_general": "https://dico.com.mx/media/catalog/product/a/r/arla-ajuste.jpg",
-			"imagen_frontal": "https://dico.com.mx/media/catalog/product/s/a/sala-arla-azul-moderna-decorada-6.jpg",
-			"imagen_lateral": null
+			"imagen_general": "https://www.gaiadesign.com.mx/media/catalog/product/cache/28cb47c806b746a91bc25b380c9673fa/s/o/sofa2cuerpos_yocogrisoscuro_still2_v1.jpg",
+			"imagen_frontal": "https://www.gaiadesign.com.mx/media/catalog/product/cache/28cb47c806b746a91bc25b380c9673fa/s/o/sofa2cuerpos_yocogrisoscuro_still3_v1.jpg",
+			"imagen_lateral": "https://www.gaiadesign.com.mx/media/catalog/product/cache/28cb47c806b746a91bc25b380c9673fa/s/o/sofa2cuerpos_yocogrisoscuro_closeup1_v1.jpg"
 		},
 		{
 			"id": 230,
