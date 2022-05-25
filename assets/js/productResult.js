@@ -2,11 +2,11 @@ const product = window.location.href.split('=').pop();
 const url = '../src/api/datamuebles.json';
 const productContainer = document.getElementById('productContainer');
 
-console.log(product);
+//console.log(product);
 fetch(url).then(response => response.json()).then(data => {
     const toArray = Object.entries(data);
     const producto = toArray[0][1].filter(producto => producto.id == product);
-    console.log(producto[0]);
+    //console.log(producto[0]);
     const datosNecesarios = {
         id: producto[0].id,
         nombre: producto[0].nombre,
@@ -26,42 +26,49 @@ fetch(url).then(response => response.json()).then(data => {
         <div class="col-12 col-md-7 col-lg-6">
             <img class="img-logo w-100 h-auto p-3" src="${datosNecesarios.imagen_general}" alt="">
         </div>
-        <div class="col">
-            <h2>${datosNecesarios.nombre}</h2>
-            <hr>
-            <h4>Descripción:</h4>
-            <p>
+        <div class="col mt-5 mb-5">
+            <h2 class="display-4 mb-3">${datosNecesarios.nombre}</h2>
+            <h4 class="mb-3">Descripción:</h4>
+            <p class="mb-3">
                 ${datosNecesarios.descripcion}
             </p>
-            <hr>
-            <h5>Características:</h5>
+            <h5 class="mb-3">Características:</h5>
             <table class="table table-striped">
-                <thead>
+                <thead class="thead-dark">
                     <tr>
-                        <th scope="col">Precio</th>
-                        <th scope="col">Materiales</th>
-                        <th scope="col">Funcionalidad</th>
-                        <th scope="col">Cuidados</th>
                         <th scope="col">
-                            <a href="carrito.html">
-                                <i class="fas fa-shopping-cart go-shopping go-shopping"></i>
-                            </a>
+                            <div>Precio</div>
+                        </th>
+                        <th scope="col">
+                            <div>Materiales</div>
+                        </th>
+                        <th scope="col">
+                            <div >Funcionalidad</div>
+                        </th>
+                        <th scope="col" class="d-none d-lg-block">
+                            <div class="d-flex flex-row">
+                                <div>Cuidados</div>
+                                <div class="ml-auto">
+                                    <a href="carrito.html">
+                                        <i class="fas fa-shopping-cart go-shopping go-shopping text-light"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>$${parseFloat(datosNecesarios.precio) }</td>
+                        <td>$${datosNecesarios.precio}</td>
                         <td>${datosNecesarios.materiales}</td>
                         <td>${datosNecesarios.funcionalidad}</td>
-                        <td>${datosNecesarios.cuidados}</td>
+                        <td class="d-none d-lg-block">${datosNecesarios.cuidados}</td>
                     </tr>
                 </tbody>
             </table>
-            <hr>
         </div>
     </div>
-    <div class="row ml-3 mr-3 d-none d-md-block card">
+    <div class="row d-none d-md-block card">
         <div class="col-12 gridContainer">
             <div id="d1">
                 <img class="img-logo w-100 h-100 p-3" src="${datosNecesarios.imagen_frontal}" alt="">
