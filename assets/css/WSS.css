@@ -32,6 +32,105 @@
     object-fit: cover;
     object-position: center;
   }
+
+
+/* Inicio */
+
+
+#Inicio{
+	background-color: #004443;
+} 
+.int1{
+    background-color:  #569B99;
+    height: 20px;
+
+}
+
+
+
+
+
+  /* Nosotros */
+  .pantalla{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: calc(100vh - 76px);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    vertical-align: top;
+    align-items: flex-start;
+}
+
+.logo{
+  width: 300px;  
+}
+
+
+.cuadro{
+  background-color: rgba(0, 0, 0, 0.387);
+  padding: 10px ;
+  color: white;
+  border-radius: 20px;
+  vertical-align: top;
+  border: 10px;
+  margin-top:4rem ;
+  font-size: 15px;
+  text-align: left;
+}
+
+h2{
+  font-size: 20px ;
+}
+
+.desc{
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: justify;
+}
+
+.img-fluid{
+  width: 400px;
+  height: 400px;
+}
+
+.images{
+  display: flex;
+  align-items: left;
+  height: 400px;
+  max-width: 100%;
+}
+
+.sam{
+  width: 300px;
+  padding: 30px;
+  display:flex;
+  align-items: center;
+}   
+
+
+
+hr {
+  border: #47817E solid 1px;
+  border-radius: 2px;
+  height: 0px;
+}
+
+.img-card-team {
+  width: 100%;
+  height: auto;
+  border-radius: 1px;
+}
+
+.imgprom{
+    width: 337px;
+    height: 164px;
+}
+
+
+
   /* Footer */
 .footer-bg {
     background-color:#818DAB;
@@ -73,5 +172,16 @@
     grid-template-columns: auto auto auto;
     grid-template-rows: 20rem;
   }
-  
-  
+
+
+
+
+
+/* Pag division OPCIONAL */
+
+/* .pagdivision{
+    background-color: #004443;
+    
+        height: calc(100px - 76px);
+        
+} */
