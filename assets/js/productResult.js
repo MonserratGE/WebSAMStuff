@@ -1,5 +1,5 @@
 const product = window.location.href.split('=').pop();
-const url = '../src/api/datamuebles.json';
+const url = 'src/api/datamuebles.json';
 const productContainer = document.getElementById('productContainer');
 
 //console.log(product);
