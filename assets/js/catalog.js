@@ -1,5 +1,5 @@
 //const myAccess = '563492ad6f91700001000001189ff3f514204c2e8051b9e549c2158b';
-const url = '../src/api/datamuebles.json';
+const url = 'src/api/datamuebles.json';
 const catalogContainer = document.getElementById('catalogContainer');
 
 fetch(url).then((response) => response.json()).
