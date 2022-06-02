@@ -1,140 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&family=Quicksand&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:wght@500&family=Quicksand:wght@300;700&family=Raleway:wght@500&display=swap');
 
-
-
-
-
-/* Navbar */
-
-
-.navbar-ground {
-    background-color: #818DAB;
-
-
-  }
-  
-  .container > h2 {
-    color: #fff;
-    font-family: 'Roboto', sans-serif;;
-    font-size: 2.5rem;
-    font-weight: 400;
-    margin: 0.5rem 0;
-  }
-  
-  .navbar-brand > img {
-    width: 100px;
-    height: auto;
-  }
-  
-  .img-logo {
-    width: 315px;
-    height: 50px;
-    object-fit: cover;
-    object-position: center;
-  }
-
-
-/* Inicio */
-
-
-#Inicio{
-	background-color: #004443;
-} 
-.int1{
-    background-color:  #569B99;
-    height: 20px;
-
-}
-
-
-
-
-
-  /* Nosotros */
-  .pantalla{
-    position: absolute;
-    z-index: 1;
+.medios-contacto {
     width: 100%;
-    height: calc(100vh - 76px);
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    vertical-align: top;
-    align-items: flex-start;
+    height: 2rem;
+    background-color: #000941;
+    margin: 0;
 }
 
-.logo{
-  width: 300px;  
+.bg-first {
+    background-color: #5E6A87 !important;
 }
 
-
-.cuadro{
-  background-color: rgba(0, 0, 0, 0.387);
-  padding: 10px ;
-  color: white;
-  border-radius: 20px;
-  vertical-align: top;
-  border: 10px;
-  margin-top:4rem ;
-  font-size: 15px;
-  text-align: left;
+.img-logo {
+    width: auto;
+    height: 60px;
 }
 
-h2{
-  font-size: 20px ;
+.nav-items {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.1rem;
+    font-size: 23px;
+    font-weight: 300;
 }
 
-.desc{
-  padding-left: 15px;
-  padding-right: 15px;
-  text-align: justify;
+/* Comienzan estilos del header tamaño lg*/
+.header{
+    position: relative;
 }
 
-.img-fluid{
-  width: 400px;
-  height: 400px;
+.main-button {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    transition: 400ms;
 }
 
-.images{
-  display: flex;
-  align-items: left;
-  height: 400px;
-  max-width: 100%;
+.main-button:hover{
+    color: #000000;
+    transition-timing-function: ease-in-out;
 }
 
-.sam{
-  width: 300px;
-  padding: 30px;
-  display:flex;
-  align-items: center;
-}   
-
-
-
-hr {
-  border: #47817E solid 1px;
-  border-radius: 2px;
-  height: 0px;
+.button-img{
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    background-color: transparent;
 }
 
-.img-card-team {
+/* .img-header {
+    background-image: url(/assets/img/Monse_selection.png);
+    height: 100%;
+} */
+
+/* Terminan estilos del header*/
+
+/* Estilos para los breadcrumbs */
+.breadcrumb {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300 !important;
+    width: 50%;
+    margin: 5rem 0;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    color: #fff;
+    border: none;
+    background-color: #818DAB !important;
+    box-shadow: #677271 0 5px 8px 0;
+}
+
+/* Terminan los estilos de breadcrumbs */
+.valores {
+    margin: 35px 0;
+}
+
+.container-valor-honestidad {
+    width: 100%;
+    height: 250px;
+}
+
+.fondo-color1{
+  background-color: #569B99;
+}
+
+.container-valor-responsabilidad {
   width: 100%;
-  height: auto;
-  border-radius: 1px;
+  height: 250px;
+  background-color: #cedddd;
 }
 
-.imgprom{
-    width: 337px;
-    height: 164px;
+.container-valor-puntualidad {
+  width: 100%;
+  height: 250px;
+  background-color: #569B99;
 }
-
-
-
   /* Footer */
+.f-lineaTop{
+  background-color: #5E6A87;
+  margin: 0%;
+  height: 45px;
+}
+
+.f-lineaBot{
+  background-color: #000941;
+  margin: 0%;
+  height: 24px;
+}
+
 .footer-bg {
     background-color:#818DAB;
+    color: black;
   }
+
+
   
   .footer {
     /*margin-top: 400px;*/
@@ -153,6 +133,10 @@ hr {
   .footer span {
     font-weight: bold;
   }
+  .footer button{
+    background-color: #5E6A87;
+    border-color: white;
+  }
   
   
   hr {
@@ -164,6 +148,9 @@ hr {
   @media (max-width: 1000px) {
     .pantalla {
       display: none;
+    }
+    .breadcrumb {
+      width: 100%;
     }
   }
   
