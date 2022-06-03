@@ -287,6 +287,11 @@
   }
 }
 
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  }
+
 @media only screen and (max-width: 576px){
 .main-button{
   font-size: .6rem;
@@ -297,6 +302,18 @@
 }
 }
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     background-image: ;
+} */
+
+.fondo{
+  background-color:#649B9A;
+}
+
+.fondo_izq{
+  background-color: #317877;
+}
+
+.color-fff{
+  color:#fff;
 }
