@@ -76,13 +76,24 @@
     margin: 35px 0;
 }
 
-.container-valor-honestidad {
+.container-valor{
     width: 100%;
     height: 250px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.fondo-color1{
-  background-color: #569B99;
+.container-valor i {
+  font-size: 5rem;
+  margin-bottom: 6%;
+  color: rgb(250, 241, 241);
+}
+
+.container-valor h3{
+  color:  rgb(250, 241, 241);
 }
 
 .container-valor-responsabilidad {
@@ -160,8 +171,63 @@
     grid-template-rows: 20rem;
   }
 
+  .rama_tiempo {
+    padding: 10rem 0;
+    background: rgb(65,71,86);
+    background: linear-gradient(180deg, rgba(65,71,86,1) 35%, rgba(49,120,119,1) 100%);
+}
 
+.card1{
+  background-color: #414756;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  padding: 1rem;
+  height: 300px;
+  text-align:center;
+}
+.img-rob {
+    background-color: #414756;
+  }
+.img-hum {
+    background-color: #317877;
+}
+.card2{
+    background-color: #317877;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    padding: 1rem;
+    height: 300px;
+    text-align:center;
+  }
 
+.servicios{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+
+.texto-s{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.texto-desc, .texto-s h2{
+  display: inline;
+  padding-left: 16%;
+}
+ 
+.servicios img{
+  border: 25px solid #569B99;
+}
+
+.sombra{
+  box-shadow: -25px 25px; 
+  color: #569b9994;
+}
 
 
 /* Pag division OPCIONAL */
@@ -172,3 +238,65 @@
         height: calc(100px - 76px);
         
 } */
+
+@media only screen and (max-width: 768px) {
+  .servicios{
+    flex-direction: column-reverse;
+    margin-bottom: 15%;
+  }
+
+  .sombra{
+    box-shadow: -15px 15px; 
+    color: #569b9994;
+  }
+
+  .servicios img{
+    border: 15px solid #569B99;
+  }
+  .texto-s{
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .servicios{
+    flex-direction: column-reverse;
+    margin-bottom: 10%;
+  }
+
+  .servicios img{
+    border: 10px solid #569B99;
+    height: 220px;
+  }
+
+  .servicios ul{
+    padding: 0;
+  }
+
+  .sombra{
+    box-shadow: -15px 15px; 
+    color: #569b9994;
+  }
+  .texto-s{
+    width: 100%;
+  }
+  .texto-s h2{
+    font-size: 25px;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 576px){
+.main-button{
+  font-size: .6rem;
+  padding: 0;
+}
+.btn{
+  padding: 2px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+    background-image: ;
+}
