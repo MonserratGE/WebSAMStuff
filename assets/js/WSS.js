@@ -21,8 +21,9 @@ const template_Adolf = `
             <div class="container color-fff">
                 <div class="row align-items-center">
                     <div id="" class="col-12 col-md-6 mt-5 mb-5">
-                        <div id="img_tamplate"></div>
-                        <img class="img-card w-100 h-100 p-3" src="assets/img/Adolfo.jpg" alt="">
+                        <div id="img_tamplate">
+                            <img class="img-card w-100 h-100 p-3" src="assets/img/Adolfo.jpg" alt="">
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 mt-5 mb-5 fondo_izq">
                         <div id="info_template" class="d-flex flex-column">
@@ -44,8 +45,9 @@ const template_Mitzi = `
             <div class="container color-fff">
                 <div class="row align-items-center">
                     <div id="" class="col-12 col-md-6 mt-5 mb-5">
-                        <div id="img_tamplate"></div>
-                        <img class="img-card w-100 h-100  p-3" src="assets/img/Mitzi.jpg" alt="">
+                        <div id="img_tamplate">
+                            <img class="img-card w-100 h-100  p-3" src="assets/img/Mitzi.jpg" alt="">
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 mt-5 mb-5 fondo_izq">
                         <div id="info_template" class="d-flex flex-column">
@@ -65,8 +67,9 @@ const template_Akes = `
             <div class="container color-fff">
                 <div class="row align-items-center">
                     <div id="" class="col-12 col-md-6 mt-5 mb-5">
-                        <div id="img_tamplate"></div>
-                        <img class="img-card w-100 h-100 p-3" src="assets/img/Aketzali.jpeg" alt="">
+                        <div id="img_tamplate">
+                            <img class="img-card w-100 h-100 p-3" src="assets/img/Aketzali.jpeg" alt="">
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 mt-5 mb-5 fondo_izq">
                         <div id="info_template" class="d-flex flex-column">
@@ -86,8 +89,9 @@ const template_Monse = `
             <div class="container color-fff">
                 <div class="row align-items-center">
                     <div id="" class="col-12 col-md-6 mt-5 mb-5">
-                        <div id="img_tamplate"></div>
-                        <img class="img-card w-100 h-100 p-3" src="assets/img/Monse.jpg" alt="">
+                        <div id="img_tamplate">
+                            <img class="img-card w-100 h-100 p-3" src="assets/img/Monse.jpg" alt="">
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 mt-5 mb-5 fondo_izq">
                         <div id="info_template" class="d-flex flex-column">
@@ -107,8 +111,9 @@ const template_Manu = `
                 <div class="container color-fff">
                 <div class="row align-items-center">
                     <div id="" class="col-12 col-md-6 mt-5 mb-5">
-                        <div id="img_tamplate"></div>
-                        <img class="img-card w-100 h-100 p-3" src="assets/img/Manuel.jpg" alt="">
+                        <div id="img_tamplate">
+                            <img class="img-card w-100 h-100 p-3" src="assets/img/Manuel.jpg" alt="">
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 mt-5 mb-5 fondo_izq">
                         <div id="info_template" class="d-flex flex-column">
@@ -128,8 +133,9 @@ const template_Mijh = `
             <div class="container color-fff">
                 <div class="row align-items-center">
                     <div id="" class="col-12 col-md-6 mt-5 mb-5">
-                        <div id="img_tamplate"></div>
-                        <img class="img-card w-100 h-100 p-3" src="assets/img/Mijhail.jpeg" alt="">
+                        <div id="img_tamplate">
+                            <img class="img-card w-100 h-100 p-3" src="assets/img/Mijhail.jpeg" alt="">
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 mt-5 mb-5 fondo_izq">
                         <div id="info_template" class="d-flex flex-column">
