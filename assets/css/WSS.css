@@ -91,7 +91,23 @@ h2 {
     flex-direction: column;
 }
 
+.container-Pvalor{
+  width: 100%;
+  height: 250px;
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .container-valor i {
+  font-size: 5rem;
+  margin-bottom: 6%;
+  color: rgb(250, 241, 241);
+}
+
+.container-Pvalor i {
   font-size: 5rem;
   margin-bottom: 6%;
   color: rgb(250, 241, 241);
@@ -101,22 +117,34 @@ h2 {
   color:  rgb(250, 241, 241);
 }
 
+.container-Pvalor h3{
+  color:  rgb(250, 241, 241);
+}
+
 .container-valor-responsabilidad {
   width: 100%;
   height: 250px;
   background-color: #cedddd;
 }
 
-.container-valor-puntualidad {
+.container-Pvalor-puntualidad {
   width: 100%;
   height: 250px;
   background-color: #569B99;
+}
+
+/*Equipo */
+.equipo1{
+  margin-left: 18%;
+}
+.equipo3{
+  margin-right: 18%;
 }
   /* Footer */
 .f-lineaTop{
   background-color: #5E6A87;
   margin: 0%;
-  height: 45px;
+  height: 10px;
 }
 
 .f-lineaBot{
@@ -130,7 +158,7 @@ h2 {
     color: black;
   }
 
-
+  
   
   .footer {
     /*margin-top: 400px;*/
@@ -168,7 +196,10 @@ h2 {
     .breadcrumb {
       width: 100%;
     }
-  }
+
+ 
+}
+
   
   .gridContainer{
     display: grid;
@@ -242,6 +273,40 @@ h2 {
   color: #569b9994;
 }
 
+/* ROBOT Y HUMANO */
+.seccion-vm{
+  border: none;
+}
+
+.robot{
+  background-color: #414756;
+  padding: 2%;
+  width: 100%;
+}
+
+.humano{
+  background-color: #317877;
+  padding: 2%;
+  padding-left: 7%;
+  width: 100%;
+}
+
+.text-vm{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  width: 50%;
+}
+
+.text-vm p{
+  text-align: center;
+}
+
+
+
+
 
 /* Pag division OPCIONAL */
 
@@ -252,7 +317,16 @@ h2 {
         
 } */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 785px) {
+/*IMG PRINCIPAL*/
+  .main-button{
+    font-size: 15px;
+  }
+
+  .espacio-btn{
+    margin-right: 15px;
+  }
+
   .servicios{
     flex-direction: column-reverse;
     margin-bottom: 15%;
@@ -269,19 +343,52 @@ h2 {
   .texto-s{
     width: 90%;
   }
+
+.arbol-equipo img{
+  width: 100%;
+  background-image: url("assets/img/rama_tiempo2.png");
+}
+
+  /* EQUIPO */
+  .equipo1{
+    flex-direction: column;
+    margin-left: 13%;
+  }
+  .equipo2{
+    flex-direction: column;
+  }
+  .equipo3{
+    flex-direction: column;
+    margin-right: 13%;
+  }
+
+ .texto-equipo{
+   width: auto;
+ }
+
 }
 
 @media only screen and (max-width: 576px) {
-  .servicios{
-    flex-direction: column-reverse;
-    margin-bottom: 10%;
+  /*IMG PRINCIPAL*/
+  
+  .main-button{
+    font-size: .6rem;
+    padding: 0px;
   }
+  .espacio-btn{
+    padding: 0;
+    margin: 0;
+  }
+
+  /*VALORES*/
 
   .servicios img{
     border: 10px solid #569B99;
     height: 220px;
   }
 
+ 
+  
   .servicios ul{
     padding: 0;
   }
@@ -298,21 +405,49 @@ h2 {
     text-align: center;
     padding: 0;
   }
-}
+
 
 h2 {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   }
 
-@media only screen and (max-width: 576px){
-  .main-button{
-    font-size: .6rem;
-    padding: 0;
+
+  .text-vm{
+    margin-left: 3px;
   }
-  .btn{
-    padding: 2px;
+
+/* ROBOT Y HUMANO*/
+  .Himg-vm img{
+    height: 260px;
   }
+
+  .Rimg-vm img{
+    height: 260px;
+  }
+
+  .text-vm p{
+    font-size: 15px;
+  }
+
+  /* EQUIPO */
+  .equipo1{
+    flex-direction: column;
+  }
+  .equipo2{
+    flex-direction: column;
+  }
+  .equipo3{
+    flex-direction: column;
+  }
+
+ .texto-equipo{
+   width: auto;
+ }
+
+
+  
+
 }
 
 .img-container {
@@ -323,18 +458,166 @@ h2 {
 .mision-container {
   z-index: -1;
 }
-/* @media only screen and (max-width: 768px) {
-    background-image: ;
-} */
 
+
+/*Equipo*/
 .fondo{
-  background-color:#649B9A;
+  background-color:#3f9492;
 }
 
-.fondo_izq{
-  background-color: #317877;
+.cont-texto{
+  background: #414756;
+  padding: 10px;
+  height: auto;
+  justify-content: center;
 }
 
-.color-fff{
+.cont-texto hr{
+    border: 3px solid #317877;
+    width: 100%;
+  }
+
+.texto-equipo{
+  text-align: center;
   color:#fff;
+}
+
+.texto-equipo p{
+  text-align: justify;
+  margin: 0;
+  padding: 8px;
+  
+}
+
+.texto-equipo h3{
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.texto-equipo h4{
+  font-size: 15px;
+}
+
+.img-nos{
+  width: auto;
+  height: 70px;
+}
+
+.cont-fotos{
+  background: rgb(65,71,86);
+  background: linear-gradient(180deg, rgba(65,71,86,1) 35%, rgba(49,120,119,1) 100%);
+}
+
+.redes{
+  margin: 5%;
+  margin-bottom: 0;
+  margin-right: 0;
+  display: flex;
+  justify-content: right;
+  
+}
+
+.ic-redes{
+  margin-right: 8px;
+  margin-left: 8px;
+  border: 1px solid rgb(53, 50, 50);
+  width: auto;
+  height: auto;
+  background: linear-gradient(180deg, rgba(65,71,86,1) 35%, rgba(49,120,119,1) 100%);
+}
+
+.texto-redes{
+  text-align: right;
+  margin-right: 11%;
+  margin-top: 4%;
+}
+
+.fa-brands{
+  color: #fff;
+  font-size: x-large;
+  margin: 8px;
+  margin-left: 13px;
+  margin-right: 13px;
+}
+
+/* Proyectos*/
+.btn-color{
+  background: linear-gradient(180deg, rgba(65,71,86,1) 35%, rgba(49,120,119,1) 100%);
+  color: #fff;
+  border: none;
+}
+
+/*MEDIANA*/
+@media only screen and (max-width: 1080px) {
+/*IMG PRINCIPAL*/
+
+  .espacio-btn{
+    margin-right: 15px;
+  }
+/*VALORES*/
+.cont-v{
+  margin-top: 9%;
+}
+.container-Pvalor{
+  margin: 0 auto; 
+}
+.arbol-equipo{
+  background-image: "assets/img/rama_tiempo2.png";
+}
+
+/* ROBOT Y HUMANO*/
+.seccion-vm{
+    flex-direction: column;
+  }
+  
+.robot{
+    flex-direction: row-reverse;
+    justify-content: center;
+
+  }
+  
+.humano{
+    padding: 2%;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.Rimg-vm{
+  margin-right: 6%;
+}
+
+.Himg-vm{
+  margin-left: 6%;
+} 
+
+  .text-vm{
+    font-size: 20px;
+  }
+
+
+/*EQUIPO*/
+.seccion-equipo{
+  margin-top: 5%;
+}
+
+.cont-texto{
+  font-size: 13px;
+}
+
+.cont-texto h3{
+  font-size: 17px;
+}
+
+.fa-brands{
+  font-size:medium;
+}
+
+.equipo1{
+  margin-left: 13%;
+}
+
+.equipo3{
+  margin-right: 13%;
+}
+
 }
