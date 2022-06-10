@@ -86,8 +86,7 @@ CREATE TABLE catalogo_metodo_pago(
     id_producto INT NOT NULL,
     unidades int NOT NULL,
     total BIGINT NOT NULL,
-    mensage_salida VARCHAR(255) NOT NULL,
-    nombre_tarjeta VARCHAR(255),
+    mensaje_salida VARCHAR(255) NOT NULL,
     PRIMARY KEY (id_fila_compra),
     FOREIGN KEY (id_producto) REFERENCES producto(id_producto)
  );
