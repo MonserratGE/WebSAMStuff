@@ -124,7 +124,7 @@ CREATE TABLE recibo_pago(
 	texto text,
 	id_cliente int NOT NULL,
 	created_at TIMESTAMP NOT NULL,
-    updatesd_at TIMESTAMP NOT NULL,
+    updated_at TIMESTAMP NOT NULL,
 	PRIMARY KEY (id_recibo),
     FOREIGN KEY (id_compra) REFERENCES compra(id_compra),
     FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente)
