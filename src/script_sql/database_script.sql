@@ -109,7 +109,7 @@ CREATE TABLE compra(
 	id_fila_compra int NOT NULL,
     id_metodo_pago INT NOT NULL,
 	unidades int,
-	precio BIGINT NOT NULL,
+	total BIGINT NOT NULL,
 	created_at TIMESTAMP NOT NULL,
 	updated_at TIMESTAMP NOT NULL,
 	PRIMARY KEY(id_compra),
