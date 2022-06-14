@@ -1,14 +1,10 @@
 SELECT * FROM wss_prueba.catalogo_metodo_pago;
 
 -- **************************** CREAR CATEGORIA ********************************
-INSERT INTO catalogo_metodo_pago(id_metodo_pago, nombre_metodo_pago, codigo_metodo_pago, created_at, updated_at) VALUES 
-						(null, "Efectivo", "EF", NOW(), NOW());
-INSERT INTO catalogo_metodo_pago(id_metodo_pago, nombre_metodo_pago, codigo_metodo_pago, created_at, updated_at) VALUES 
-						(null, "Transferencia", "TRA", NOW(), NOW());
-INSERT INTO catalogo_metodo_pago(id_metodo_pago, nombre_metodo_pago, codigo_metodo_pago, created_at, updated_at) VALUES 
-						(null, "Tarjeta debito", "TD", NOW(), NOW());
-INSERT INTO catalogo_metodo_pago(id_metodo_pago, nombre_metodo_pago, codigo_metodo_pago, created_at, updated_at) VALUES 
-						(null, "Tarjeta credito", "TC", NOW(), NOW());
+INSERT INTO catalogo_metodo_pago VALUES (null, "Efectivo", "EF", NOW(), NOW());
+INSERT INTO catalogo_metodo_pago VALUES (null, "Transferencia", "TRA", NOW(), NOW());
+INSERT INTO catalogo_metodo_pago VALUES (null, "Tarjeta debito", "TD", NOW(), NOW());
+INSERT INTO catalogo_metodo_pago VALUES (null, "Tarjeta credito", "TC", NOW(), NOW());
                         
 -- **************************** MOSTRAR METODO DE PAGO ********************************
 -- Leer datos de categoria

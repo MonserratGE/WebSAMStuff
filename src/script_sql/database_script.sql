@@ -44,10 +44,10 @@ CREATE TABLE categoria (
 -- Create productos
 CREATE TABLE producto (
 	id_producto INT NOT NULL AUTO_INCREMENT,
+    id_categoria INT NOT NULL,
     nombre VARCHAR(100) NOT NULL,
     codigo CHAR(10) NOT NULL,
     descripcion VARCHAR(255) NOT NULL,
-    id_categoria INT NOT NULL,
     precio BIGINT NOT NULL,
     stock_units INT NOT NULL,
     funcionalida VARCHAR(255) NOT NULL,
@@ -62,18 +62,11 @@ CREATE TABLE producto (
     foreign key (id_categoria) REFERENCES categoria(id_categoria)
 );
 
--- Create categoria_producto
-CREATE TABLE categoria_producto (
-	id_categoria INT NOT NULL,
-    id_producto INT NOT NULL,
-    FOREIGN KEY (id_categoria) REFERENCES categoria(id_categoria),
-    FOREIGN KEY (id_producto) REFERENCES producto(id_producto)
-);
-
  -- Catalogo metodos de pago
 CREATE TABLE catalogo_metodo_pago(
 	id_metodo_pago INT NOT NULL AUTO_INCREMENT,
     nombre_metodo_pago VARCHAR(30) NOT NULL,
+    codigo_metodo_pago CHAR(4) NOT NULL,
     created_at TIMESTAMP,
     updated_at TIMESTAMP,
     PRIMARY KEY (id_metodo_pago)
@@ -83,6 +76,7 @@ CREATE TABLE catalogo_metodo_pago(
  DROP TABLE IF EXISTS fila_compra;
  CREATE TABLE fila_compra (
 	id_fila_compra INT NOT NULL AUTO_INCREMENT,
+    num_compra INT NOT NULL,
     id_producto INT NOT NULL,
     unidades int NOT NULL,
     total BIGINT NOT NULL,
